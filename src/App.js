@@ -9,7 +9,7 @@ export const App = () => {
   return (
     <div>
       <center>
-        <Test name = {data.name} age={data.age}/>
+        <Test name = {props.name} age={props.age}/>
       </center>
 
     </div>
