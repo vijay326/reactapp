@@ -1,16 +1,14 @@
 import React from "react";
 
-class Test extends React.Component {
-    render(){
+const Test = (props) => {
         return(
             <div>
                 <center>
                     <h2> I'm test component</h2>
-                    <p> Name: {this.props.name}</p>
+                    <p> Name: {props.name}</p>
                 </center>
             </div>
         )
     }
-}
 
 export default Test;

@@ -1,12 +1,15 @@
 import React,{useState} from 'react'
+import Test from './Test';
 
 export const App = () => {
-  const [name,setName] = useState(`Vijay Kumar Reddy Kotagiri`);
+  const [data,setData] = useState({
+    name : `Vijay Kumar Reddy Kotagiri`,
+    age : 31
+  });
   return (
     <div>
       <center>
-        <h3> My First react App</h3>
-        <p> Name : {name} </p>
+        <Test name = {data.name} age={data.age}/>
       </center>
 
     </div>
